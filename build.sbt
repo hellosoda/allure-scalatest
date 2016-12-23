@@ -26,15 +26,9 @@ scmInfo := Some(
 organizationName := "Yandex LLC"
 
 /* scala versions and options */
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq(
-  "2.8.0", "2.8.1", "2.8.2",
-  "2.9.0", "2.9.0-1",
-  "2.9.1", "2.9.1-1",
-  "2.9.2",
-  "2.9.3"
-)
+crossScalaVersions := Seq()
 
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(

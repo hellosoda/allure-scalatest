@@ -3,7 +3,7 @@ name := "allure-scalatest"
 
 organization := "ru.yandex.qatools.allure"
 
-version := "1.4.0-SNAPSHOT"
+version := "1.5.0-SNAPSHOT"
 
 description := "Scalatest adapter for Allure framework."
 

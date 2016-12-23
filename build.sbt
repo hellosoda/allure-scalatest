@@ -69,7 +69,7 @@ resolvers +=
   "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 libraryDependencies ++= Seq (
-  "org.scalatest" % "scalatest_2.10" % "2.1.4",
+  "org.scalatest" %% "scalatest" % "2.2.6",
   "ru.yandex.qatools.allure" % "allure-java-aspects" % "1.4.0",
   "org.mockito" % "mockito-all" % "1.9.5" % "test"
 )

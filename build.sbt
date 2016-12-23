@@ -46,7 +46,9 @@ scalacOptions ++= Seq(
 
 // These language flags will be used only for 2.10.x.
 // Uncomment those you need, or if you hate SIP-18, all of them.
-scalacOptions <++= scalaVersion map { sv =>
+scalacOptions ++= {
+  val sv = scalaVersion.value
+
   if (sv startsWith "2.10") List(
     "-Xverify",
     "-Ywarn-all",
@@ -87,7 +89,8 @@ offline := false
 /* publishing */
 publishMavenStyle := true
 
-publishTo <<= version { (v: String) =>
+publishTo := {
+  val v = version.value
   val nexus = "https://oss.sonatype.org/"
   if (v.trim.endsWith("SNAPSHOT")) Some(
     "snapshots" at nexus + "content/repositories/snapshots"

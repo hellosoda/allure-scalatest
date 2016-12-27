@@ -12,4 +12,5 @@ addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.7.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.3")
 
+addSbtPlugin("com.frugalmechanic" % "fm-sbt-s3-resolver" % "0.9.0")
 

@@ -91,11 +91,16 @@ publishMavenStyle := true
 
 publishTo := {
   val v = version.value
+  Some(("HelloSoda Maven Repository" at
+             "s3://maven.hellosoda.com/releases"))
+
+  /*
   val nexus = "https://oss.sonatype.org/"
   if (v.trim.endsWith("SNAPSHOT")) Some(
     "snapshots" at nexus + "content/repositories/snapshots"
   )
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
+  */
 }
 
 publishArtifact in Test := false

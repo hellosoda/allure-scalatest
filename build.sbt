@@ -72,8 +72,8 @@ resolvers +=
 
 libraryDependencies ++= Seq (
   "org.scalatest" %% "scalatest" % "2.2.6",
-  "ru.yandex.qatools.allure" % "allure-java-aspects" % "1.4.0",
-  "org.mockito" % "mockito-all" % "1.9.5" % "test"
+  "ru.yandex.qatools.allure" % "allure-java-aspects" % "1.4.23",
+  "org.mockito" % "mockito-core" % "2.4.2" % "test"
 )
 
 /* testing */

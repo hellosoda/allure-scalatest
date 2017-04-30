@@ -3,7 +3,7 @@ name := "allure-scalatest"
 
 organization := "ru.yandex.qatools.allure"
 
-version := "1.5.0-hellosoda1"
+version := "1.5.0-hellosoda2"
 
 description := "Scalatest adapter for Allure framework."
 
@@ -26,7 +26,7 @@ scmInfo := Some(
 organizationName := "Yandex LLC"
 
 /* scala versions and options */
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
 
 crossScalaVersions := Seq()
 
